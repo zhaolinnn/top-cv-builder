@@ -39,7 +39,7 @@ function Experiences({ experiences, setExperiences }) {
       <h3>Experiences</h3>
 
       {experiences.map((exp, idx) => (
-        <div key={exp.id || idx} className="experience-item">
+        <div key={exp.id || idx} className="experience-inputs">
           <label>
             Company:
             <input name="company" value={exp.company || ''} onChange={handleInputChange(idx)} />
